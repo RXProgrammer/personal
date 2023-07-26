@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-image: url(cesped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+hr{
+    padding: 7px;
+    background-color: orange;
+}
+
+.caja{
+    text-align: center;
+    transform: translate(0px, 20px);
+    border: 1px solid black;
+    width: max-content;
+    margin: 0 auto;
+    padding: 20px 60px 30px 60px;
+    border-radius: 30px;
+    background-color: white;
+    overflow-y: scroll;
+    height: 665px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+    text-align:left;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: aquamarine;
+}
+
+span{
+    color: red;
+}
+
+.checkbox p{
+    width: 350px;
+}
+
+form button{
+    padding: 10px;
+    background-color: rgb(2, 208, 2);
+    border: 1px solid black;
+    color: white;
+}
+
+/* Hasta 767px (por ejemplo, iPhones en modo retrato) */
+@media screen and (max-width: 400px) {
+    .caja{
+        padding: 20px 15px 20px 15px !important;
+    }
+  }
